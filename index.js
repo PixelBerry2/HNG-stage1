@@ -5,7 +5,7 @@ let outputTime = document.querySelector('.current-time');
     
     let date = today.toLocaleDateString("en-US", { weekday: "long" });;
 
-    let current_date = "Day: "+`${date}`;
+    let current_date = '${date}`;
     outputDate.innerText = current_date;
 
     let hours = today.getUTCHours();
@@ -13,5 +13,5 @@ let outputTime = document.querySelector('.current-time');
     let seconds = today.getUTCSeconds();
     let millisecs = today.getUTCMilliseconds();
 
-    let current_time = "Current Time: "+`${hours}:${minutes}:${seconds}:${millisecs}`;
+    let current_time = "${hours}:${minutes}:${seconds}:${millisecs}";
     outputTime.innerText = current_time;
