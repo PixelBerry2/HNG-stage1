@@ -8,8 +8,10 @@ let current_date = `${date}`;
 outputDate.innerText = current_date;
 
 function updateCurrentTime() {
-  const currentTimeMilliseconds = new Date().getTime();
-  outputTime.innerText = currentTimeMilliseconds;
+  const currentTimeMilliseconds  = new Date().getTime();
+  let currentTime= `${currentTimeMilliseconds}`;
+  outputTime.innerText = currentTime;
 }
 
+// Update the current time every millisecond
       setInterval(updateCurrentTime, 100);
