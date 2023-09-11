@@ -8,10 +8,7 @@ let outputTime = document.querySelector('.current-time');
     let current_date = '${date}`;
     outputDate.innerText = current_date;
 
-    let hours = today.getUTCHours();
-    let minutes = today.getUTCMinutes();
-    let seconds = today.getUTCSeconds();
-    let millisecs = today.getUTCMilliseconds();
-
-    let current_time = "${hours}:${minutes}:${seconds}:${millisecs}";
+    let currentDate = new Date();
+    let utcDateMilliseconds = today.getTime();
+    let current_time = `${utcDateMilliseconds}`;
     outputTime.innerText = current_time;
