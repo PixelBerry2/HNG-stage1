@@ -8,7 +8,8 @@ let outputTime = document.querySelector('.current-time');
     let current_date = '${date}`;
     outputDate.innerText = current_date;
 
-    let currentDate = new Date();
-    let utcDateMilliseconds = today.getTime();
-    let current_time = `${utcDateMilliseconds}`;
-    outputTime.innerText = current_time;
+    function updateCurrentTime() {
+        const currentTimeMilliseconds = new Date().getTime();
+        outputTime.innerText = currentTimeMilliseconds;
+      }
+      setInterval(updateCurrentTime, 100);
