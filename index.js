@@ -5,7 +5,7 @@ let outputTime = document.querySelector('.current-time');
     
     let date = today.toLocaleDateString("en-US", { weekday: "long" });;
 
-    let current_date = '${date}`;
+    let current_date = `${date}`;
     outputDate.innerText = current_date;
 
     function updateCurrentTime() {
